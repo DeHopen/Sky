@@ -70,10 +70,10 @@ def assistant(command):
         pyautogui.keyUp("alt")
     elif "сверни все окна" in command or "разверни все окна" in command:
         SkyResponse("Хорошо, Сер")
-        pyautogui.keyDown("win")
+        pyautogui.keyDown("Win")
         pyautogui.press("d")
         time.sleep(1)
-        pyautogui.keyUp("win")
+        pyautogui.keyUp("Win")
     elif "поменяй язык" in command:
         SkyResponse("Хорошо, Сэр, сменила язык")
         pyautogui.hotkey('alt', 'shift')
