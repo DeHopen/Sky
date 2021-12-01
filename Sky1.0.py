@@ -68,9 +68,6 @@ def assistant(command):
         pyautogui.press("tab")
         time.sleep(1)
         pyautogui.keyUp("alt")
-    elif "old windows" in command or "if windows" in command:
-        SkyResponse("Okay sir, Minimize all windows")
-        pyautogui.hotkey('win','d')
     elif "change language" in command:
         SkyResponse("Okay sir, Change language")
         pyautogui.keyDown("alt")
@@ -79,10 +76,10 @@ def assistant(command):
         pyautogui.keyUp("alt")
     elif "unfold window" in command or "unfold old window" in command:
         SkyResponse("Okay sir, Unfolded all windows")
-        pyautogui.keyDown("alt")
-        pyautogui.press("tab")
+        pyautogui.keyDown("Win")
+        pyautogui.press("d")
         time.sleep(1)
-        pyautogui.keyUp("alt")
+        pyautogui.keyUp("Win")
     elif "close app" in command:
         SkyResponse("Okay sir, close app")
         pyautogui.keyDown("alt")
